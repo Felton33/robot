@@ -1,24 +1,28 @@
-# Robot Inspection Workflow UI
+# Robotic Inspection Workflow Interface
 
-A Python-based graphical user interface (GUI) for automating part inspection using a robotic arm. Built with Tkinter, this tool guides the user through a multi-step process for visual inspection, classification, and routing of mechanical components.
+A Python-based GUI system for automating part inspection using a robotic arm and camera. This tool streamlines part selection, imaging, defect analysis, and final classification using a multi-step workflow.
 
 ---
 
-## Features
+## Key Features
 
-- User-friendly interface for part inspection
-- Step-by-step workflow with confirmation prompts
-- Visual inspection with defect detection (optional)
-- Final classification into **Pass**, **Fail**, or **Further Inspection**
-- Modular code structure for easy extension
+- Guided workflow with GUI prompts at each step
+- Camera-based image capture and video recording
+- Automated defect analysis
+- Optional manual inspection prompt
+- Final classification into: ✅ Pass, ❌ Fail, ❓ Further Inspection
 
 ---
 
 ## Project Structure
 
 ```plaintext
-├── main_workflow1.py         # Main GUI logic and workflow controller
-├── canvas_module.py         # Custom canvas drawing for part visualization
-├── Upart_info.py            # Part information and logic
-├── detect_module.py         # (Optional) Vision/defect detection logic
-└── README.md                # You're reading this!
+├── main_workflow1.py           # Main inspection workflow logic and GUI
+├── UI_Part_info1.py            # Part selection GUI and metadata
+├── camera_module.py            # Camera initialization, image capture, video saving
+├── arduino_arm_control.py      # Robotic arm movement commands
+├── gui_confirm_part.py         # GUI to confirm part visibility in camera
+├── defect_detection.py         # Defect analysis logic using images
+├── report_generator.py         # (optional, currently not active)
+├── gui_restart.py              # (optional, currently not active)
+└── README.md                   # You're reading it!
