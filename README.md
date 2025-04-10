@@ -17,7 +17,7 @@ A Python-based graphical user interface (GUI) for automating part inspection usi
 ## Project Structure
 
 ```plaintext
-├── main_workflow.py         # Main GUI logic and workflow controller
+├── main_workflow1.py         # Main GUI logic and workflow controller
 ├── canvas_module.py         # Custom canvas drawing for part visualization
 ├── Upart_info.py            # Part information and logic
 ├── detect_module.py         # (Optional) Vision/defect detection logic
